@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea 1. Donas"/>
+        <attribute name="authors" value="amari"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 11:11:37 p. m."/>
+        <attribute name="created" value="YW1hcmk7TUlNQVlPOzIwMjUtMDMtMjY7MTE6MDY6MzUgcC4gbS47MjQ1MA=="/>
+        <attribute name="edited" value="YW1hcmk7TUlNQVlPOzIwMjUtMDMtMjY7MTE6MTE6MzcgcC4gbS47MTsyNTU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="D" type="Integer" array="False" size=""/>
+            <declare name="Precio" type="Integer" array="False" size=""/>
+            <assign variable="Precio" expression="10"/>
+            <input variable="D"/>
+            <if expression="D&gt;=30">
+                <then>
+                    <if expression="D&gt;=50">
+                        <then>
+                            <output expression="(Precio*D)-D*2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="(Precio*D)-D*1" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="D*Precio" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

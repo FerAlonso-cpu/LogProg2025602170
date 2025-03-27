@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea 2. A&#241;o bisiesto"/>
+        <attribute name="authors" value="amari"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 11:20:20 p. m."/>
+        <attribute name="created" value="YW1hcmk7TUlNQVlPOzIwMjUtMDMtMjY7MTE6MTY6MjQgcC4gbS47MjQ0OQ=="/>
+        <attribute name="edited" value="YW1hcmk7TUlNQVlPOzIwMjUtMDMtMjY7MTE6MjA6MjAgcC4gbS47MTsyNTQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A&#241;o" type="Integer" array="False" size=""/>
+            <input variable="A&#241;o"/>
+            <if expression="A&#241;o%4==0">
+                <then>
+                    <if expression="A&#241;o%100==0">
+                        <then>
+                            <if expression="A&#241;o%400==0">
+                                <then>
+                                    <output expression="&quot;Es bisiesto&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;No bisiesto&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Es bisiesto&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;No Bisiesto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
