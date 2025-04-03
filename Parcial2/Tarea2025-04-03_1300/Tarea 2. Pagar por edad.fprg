@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea 2. Pagar por edad"/>
+        <attribute name="authors" value="amari"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 11:13:19 p. m."/>
+        <attribute name="created" value="YW1hcmk7TUlNQVlPOzIwMjUtMDQtMDI7MTE6MDg6MDggcC4gbS47MjQ0Nw=="/>
+        <attribute name="edited" value="YW1hcmk7TUlNQVlPOzIwMjUtMDQtMDI7MTE6MTM6MTkgcC4gbS47MTsyNTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <assign variable="Edad" expression="0"/>
+            <input variable="Edad"/>
+            <if expression="Edad &gt;3">
+                <then>
+                    <if expression="Edad &gt;=4 &amp;&amp; Edad &gt;18">
+                        <then>
+                            <output expression="&quot;Pagas $500&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Pagas $200&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Gratis B)&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
