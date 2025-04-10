@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1. Conversi&#243;n a factorial"/>
+        <attribute name="authors" value="amari"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 08:30:11 p. m."/>
+        <attribute name="created" value="YW1hcmk7TUlNQVlPOzIwMjUtMDQtMDk7MDg6MDg6NTQgcC4gbS47MjQ2MQ=="/>
+        <attribute name="edited" value="YW1hcmk7TUlNQVlPOzIwMjUtMDQtMDk7MDg6MzA6MTEgcC4gbS47MTsyNTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N&#250;mero" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="Factorial" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="Factorial" expression="1"/>
+            <output expression="&quot;Ingresar n&#250;mero, por favor uwu: &quot;" newline="True"/>
+            <input variable="N&#250;mero"/>
+            <while expression="i&lt;=N&#250;mero">
+                <assign variable="Factorial" expression="Factorial*i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;Su n&#250;mero factorial es: &quot;&amp;Factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2. Sucesi&#243;n Fibonacci"/>
+        <attribute name="authors" value="amari"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 09:21:53 p. m."/>
+        <attribute name="created" value="YW1hcmk7TUlNQVlPOzIwMjUtMDQtMDk7MDg6MzA6MTUgcC4gbS47MjQ1Mw=="/>
+        <attribute name="edited" value="YW1hcmk7TUlNQVlPOzIwMjUtMDQtMDk7MDk6MjE6NTMgcC4gbS47MTsyNTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="cero" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="1"/>
+            <assign variable="B" expression="2"/>
+            <assign variable="i" expression="2"/>
+            <assign variable="cero" expression="0"/>
+            <output expression="cero" newline="True"/>
+            <output expression="A" newline="True"/>
+            <output expression="A" newline="True"/>
+            <output expression="B" newline="True"/>
+            <while expression="i&lt;63">
+                <assign variable="C" expression="A+B"/>
+                <output expression="C" newline="True"/>
+                <assign variable="A" expression="B"/>
+                <assign variable="B" expression="C"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
